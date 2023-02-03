@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Html</title>
+    <style>
+        .header {
+            display: flex;
+        }
+
+        .nav {
+            flex-direction: row;
+            display: block;
+            background-color: black;
+            width: -webkit-fill-available;
+        }
+
+        a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: flex-end;
+            height: 100px;
+            color: whitesmoke;
+            text-decoration: none;
+            padding-left: 25px;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .Img-Sec{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .img{
+            display: row;
+            width: calc(33.33% - 20px);
+    margin: 10px;
+        }
+
+        .img-img{
+            height: 250px;
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="logo" height="100" width="100">
+        </div>
+        <nav class="nav">
+            <a href="#" onclick="showAlert()">HOME</a>
+            <a href="#" onclick="showAlert()">ABOUT</a>
+            <a href="#" onclick="showAlert()">SERVICES</a>
+            <a href="#" onclick="showAlert()">FAQ</a>
+            <a href="#" onclick="showAlert()">CONTACT US</a>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam possimus necessitatibus excepturi,
+                dolores alias ex harum nostrum et, distinctio reprehenderit, dicta voluptates aperiam explicabo
+                quisquam. Odit quos libero quis totam! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus alias similique totam iusto corporis excepturi. Iste voluptates ab, sint, officia vel
+                eligendi natus itaque adipisci deserunt aliquid voluptas. Maiores, vel?
+            </p>
+        </div>
+    </section>
+
+    <h2 style="text-align: center;color: red;">
+        THE WORLD'S 7 WONDER
+    </h2>
+    <section class="Img-Sec container">  
+
+        
+        <div class="img">
+            <img class="img-img" src="https://cdn.britannica.com/36/162636-131-E4AA93A0/Colosseum-Rome-Italy.jpg" alt="" srcset="">
+        </div>
+        <div class="img">
+            <img class="img-img" src="https://i.natgeofe.com/n/5b9b4d5e-65ba-45d1-8f8a-f4488d5d29ba/christ_461.jpg" alt="" srcset="">
+        </div> <br>
+        <div class="img">
+            <img class="img-img" src="https://assets.traveltriangle.com/blog/wp-content/uploads/2016/11/Taj-Mahal-and-its-reflection.jpg" alt="" srcset="">
+        </div>
+        <div  class="img">
+            <img class="img-img" src="https://ca-times.brightspotcdn.com/dims4/default/2f4b65c/2147483647/strip/true/crop/500x350+0+0/resize/500x350!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F6f%2Fab%2F7fa1ddd991f0d12458276fb35ceb%2Fla-sevenwonders1-jku3c3nc" alt="" srcset="">
+        </div>
+        <div class="img">
+            <img class="img-img" src="https://static01.nyt.com/images/2017/12/11/travel/360-coverchichenitza/360-coverchichenitza-videoSixteenByNine1050-v2.jpg" alt="" srcset="">
+        </div>
+        <div class="img">
+            <img  class="img-img" src="https://i0.wp.com/dreamstakingwings.com/wp-content/uploads/2019/01/leaning-tower-of-pisa.jpg?resize=750%2C1000&ssl=1" alt="" srcset="">
+        </div>
+        <div class="img">
+            <img class="img-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROfdTCCID2U3AqfDvIfquhekM8htPBgYe7ZkIh38QHikn17Ck_gjyCqkKrKQNejgoDV98&usqp=CAU" alt="" srcset="">
+        </div>
+        
+        
+    </section>
+
+
+<footer>
+    <header class="header">
+        
+        <nav class="nav">
+            <a href="#" onclick="showAlert()">HOME</a>
+            <a href="#" onclick="showAlert()">ABOUT</a>
+            <a href="#" onclick="showAlert()">SERVICES</a>
+            <a href="#" onclick="showAlert()">FAQ</a>
+            <a href="#" onclick="showAlert()">CONTACT US</a>
+        </nav>
+        <div class="logo">
+            <img src="https://cdn.logo.com/hotlink-ok/logo-social.png" alt="logo" height="100" width="100">
+        </div>
+    </header>
+</footer>
+
+    <script>
+        function showAlert() {
+            alert("This is an alert message!");
+        }
+    </script>
+</body>
+
+</html>
